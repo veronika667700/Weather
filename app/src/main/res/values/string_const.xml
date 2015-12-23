@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shared_preferences_file_name">settings</string>
+    <string name="city">city</string>
+    <string name="metric">metric</string>
+
+    <string name="celsium">metric</string>
+    <string name="farenheit">imperial</string>
+
+    <string name="db_name">CityWeatherForecast</string>
+    <string name="day">day</string>
+    <string name="week_day">week_day</string>
+    <string name="morning_temperature">morn_temp</string>
+    <string name="day_temperature">day_temp</string>
+    <string name="evening_temperature">ev_temp</string>
+    <string name="night_temperature">night_temp</string>
+    <string name="min_temperature">min_temp</string>
+    <string name="max_temperature">max_temp</string>
+    <string name="icon">icon</string>
+    <string name="description">desc</string>
+    <string name="wind_speed">wind_speed</string>
+    <string name="wind_direction">wind_dir</string>
+    <string name="pressure">psi</string>
+    <string name="humidity">hum</string>
+
+    <string name="e_mail">vladislav.bytsyuk@gmail.com</string>
+
+    <string name="log_tag">DEV_LOG</string>
+</resources>

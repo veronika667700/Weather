@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="app_name">Finish_Project</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="lang">en</string>
+
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="navigation_drawer_close">Закрыть панель навигации</string>
+
+    <string name="input_city">Введите город:</string>
+
+    <string name="title_menu_restart">Главная</string>
+    <string name="title_menu_settings">Настройки</string>
+
+    <string name="city_title">Город:</string>
+    <string name="save">Сохранить</string>
+    <string name="metric_title">Температура: </string>
+    <string-array name="metrics">
+        <item>Цельсии</item>
+        <item>Фаренгейты</item>
+    </string-array>
+
+    <string name="back">Нажмите \"Назад\" еще раз, чтобы выйти</string>
+
+    <string name="download_error">Нет подключения к интернету.</string>
+    <string name="update">Обновить</string>
+
+    <string name="settings_title">Настройки</string>
+
+    <string name="morning_time">Утро</string>
+    <string name="day_time">День</string>
+    <string name="evening_time">Вечер</string>
+    <string name="night_time">Ночь</string>
+
+    <string-array name="months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+
+    <string name="wind">Ветер: </string>
+    <string name="pres">Давление: </string>
+    <string name="hum">Влажность: </string>
+
+    <string name="meter_per_second">м/с</string>
+    <string name="miles_per_hour">миля/ч</string>
+    <string name="presssure_units">мм рт. ст.</string>
+
+</resources>
