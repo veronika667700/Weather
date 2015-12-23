@@ -78,10 +78,7 @@ public class WeatherFragment extends Fragment
         swipeRefreshLayout =
                 (SwipeRefreshLayout) rootView.findViewById(R.id.swipeRefreshLayoutWeatherForecast);
         swipeRefreshLayout.setOnRefreshListener(this);
-        swipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_light,
-                android.R.color.holo_blue_bright,
-                android.R.color.holo_blue_dark,
-                android.R.color.holo_blue_bright);
+        swipeRefreshLayout.setColorSchemeResources(android.R.color.holo_orange_light);
         return rootView;
     }
 
