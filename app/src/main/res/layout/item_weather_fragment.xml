@@ -66,8 +66,7 @@
         <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:id="@+id/imageViewWFDescription"
-            />
+            android:id="@+id/imageViewWFDescription" />
 
     </FrameLayout>
 

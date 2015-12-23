@@ -18,7 +18,7 @@ public class JSONParser {
             JSONObject file = new JSONObject(jsonFile);
             JSONArray list = file.getJSONArray("list");
 
-            for (int it = 0; it < 14; ++it) {
+            for (int it = 0; it < 7; ++it) {
                 Weather weatherForecast = new Weather();
 
                 JSONObject listElem = list.getJSONObject(it);

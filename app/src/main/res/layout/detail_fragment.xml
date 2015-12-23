@@ -3,13 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/imageViewDetailDescription"
-        android:contentDescription="@string/icon"
-        android:src="@drawable/sun_cloud"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,38 +10,40 @@
         android:textSize="70dp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:id="@+id/textViewDetailTemperature" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Солнце"
-        android:id="@+id/textViewDetailDescription"
-        android:layout_alignBottom="@+id/imageViewDetailDescription"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1 января"
         android:id="@+id/textViewDetailDate"
-        android:layout_above="@+id/textViewDetailDescription"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewDetailTemperature"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Солнце"
+        android:id="@+id/textViewDetailDescription"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewDetailDate"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:orientation="horizontal"
         android:id="@+id/linearLayoutWind"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
-        android:layout_below="@+id/imageViewDetailDescription"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewDetailDescription"
         android:weightSum="1">
 
         <TextView

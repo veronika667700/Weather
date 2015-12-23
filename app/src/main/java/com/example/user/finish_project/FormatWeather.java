@@ -15,7 +15,8 @@ public class FormatWeather {
             case "02" : return R.drawable.sun_cloud;
             case "03" : return R.drawable.cloud;
             case "04" : return R.drawable.light_rain;
-            case "09" : return R.drawable.light_rain;
+            case "09" : return R.drawable.rain;
+            case "10" : return R.drawable.hard_rain;
             case "11" : return R.drawable.light;
             case "13" : return R.drawable.snow;
             default   : return R.drawable.sun_cloud;

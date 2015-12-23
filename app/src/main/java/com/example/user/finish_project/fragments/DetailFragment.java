@@ -7,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.user.finish_project.DBManager;
@@ -20,7 +19,6 @@ public class DetailFragment extends Fragment {
     private DBManager dbManager;
     private Weather weather;
 
-    ImageView imageViewDescription;
     TextView textViewTemperature;
     TextView textViewDate;
     TextView textViewDescription;
@@ -49,14 +47,12 @@ public class DetailFragment extends Fragment {
             textViewWind.setText(FormatWeather.getWindSpeed(weather));
             textViewPressure.setText(FormatWeather.getPressure(weather));
             textViewHumidity.setText(FormatWeather.getHumidity(weather));
-            imageViewDescription.setImageResource(FormatWeather.getWeatherIcon(weather));
         }
 
         return rootView;
     }
 
     private View viewInit(View rootView) {
-        imageViewDescription = (ImageView) rootView.findViewById(R.id.imageViewDetailDescription);
         textViewTemperature = (TextView) rootView.findViewById(R.id.textViewDetailTemperature);
         textViewDate = (TextView) rootView.findViewById(R.id.textViewDetailDate);
         textViewDescription = (TextView) rootView.findViewById(R.id.textViewDetailDescription);
