@@ -23,7 +23,6 @@
 
     <string name="back">Нажмите \"Назад\" еще раз, чтобы выйти</string>
 
-    <string name="download_error">Нет подключения к интернету.</string>
     <string name="update">Обновить</string>
 
     <string name="settings_title">Настройки</string>

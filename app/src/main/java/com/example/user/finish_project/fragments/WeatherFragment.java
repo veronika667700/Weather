@@ -43,7 +43,7 @@ public class WeatherFragment extends Fragment
 
 
     public interface OnRefresh {
-        void showNetworkIssuesSnackbar();
+        void showAlertDialog(Context context, String title, String message, Boolean status);
     }
     private OnRefresh listenerRefresh;
 
@@ -109,7 +109,8 @@ public class WeatherFragment extends Fragment
             adapter = new WeatherAdapter(context, dbManager.getWeatherForecasts());
             listView.setAdapter(adapter);
         } else  if (listenerRefresh != null) {
-            listenerRefresh.showNetworkIssuesSnackbar();
+            listenerRefresh.showAlertDialog(getActivity(), "Интернет соединение отсутствует",
+                    "При загрузке данных произошла ошибка.\nПроверьте Ваше подключение к сети.", false);
         }
     }
 

@@ -1,7 +1,10 @@
 package com.example.user.finish_project.activities;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -209,16 +212,22 @@ public class MainActivity extends AppCompatActivity
     }
 
     // Интернет
-    public void showNetworkIssuesSnackbar() {
-        Snackbar snackbar = Snackbar
-                .make(findViewById(R.id.main_container),
-                        R.string.download_error, Snackbar.LENGTH_LONG)
-                .setAction(R.string.update, new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        refresh();
-                    }
-                });
-        snackbar.show();
+    public void showAlertDialog(Context context, String title, String message, Boolean status) {
+        AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+
+        //Настраиваем название Alert Dialog:
+        alertDialog.setTitle(title);
+
+        //Настраиваем сообщение:
+        alertDialog.setMessage(message);
+
+        //Настраиваем кнопку OK
+        alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+
+        //Отображаем сообщение диалога:
+        alertDialog.show();
     }
 }
