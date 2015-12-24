@@ -33,7 +33,6 @@ public class WeatherAdapter extends BaseAdapter {
         return weatherForecastList.get(position);
     }
 
-
     @Override
     public long getItemId(int position) {
         return position;
@@ -42,6 +41,7 @@ public class WeatherAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
+        // если ничего еще не было создано
         if (convertView == null) {
             convertView = LayoutInflater.from(context)
                     .inflate(R.layout.item_weather_fragment, parent, false);

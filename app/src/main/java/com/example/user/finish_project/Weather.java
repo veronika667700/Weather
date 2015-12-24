@@ -6,7 +6,6 @@ public class Weather {
     private String icon;
     private String description;
     private DetailWeather detail;
-
     public Weather() {
         this.day = null;
         this.temperature = new Temperature();

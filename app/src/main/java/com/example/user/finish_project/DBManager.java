@@ -60,12 +60,14 @@ public class DBManager extends SQLiteOpenHelper {
         );
     }
 
+    // удаление БД
     public void drop() {
         SQLiteDatabase database =  this.getReadableDatabase();
         database.delete(tableName, null, null);
         database.close();
     }
 
+    // проверка на пустоту БД
     public Boolean isDBEmpty() {
         Boolean result;
         SQLiteDatabase database = this.getWritableDatabase();
@@ -81,12 +83,16 @@ public class DBManager extends SQLiteOpenHelper {
 
     }
 
+    // получаем заполненную БД
     public void downloadWeather() {
         ArrayList<Weather> weatherForecasts;
+        //  WeatherDownloader - AsyncTask, который скачивает JSON, парсит его в список класса WeatherForecast
+        // получает готовый список прогнозов
         WeatherDownloader weatherDownloader = new WeatherDownloader();
         weatherDownloader.execute(context);
         try {
             weatherForecasts = weatherDownloader.get();
+            // fillDataBase - заполнение БД
             fillDataBase(weatherForecasts);
         } catch (Exception e) {
             e.printStackTrace();
@@ -95,6 +101,7 @@ public class DBManager extends SQLiteOpenHelper {
         }
     }
 
+    // Заполнение БД
     private void fillDataBase(ArrayList<Weather> weatherForecasts) {
         SQLiteDatabase database = this.getWritableDatabase();
         for (Weather x : weatherForecasts) {
@@ -115,6 +122,7 @@ public class DBManager extends SQLiteOpenHelper {
         database.close();
     }
 
+    // достает список прогнозов из БД
     public ArrayList<Weather> getWeatherForecasts() {
         ArrayList<Weather> weatherForecasts = new ArrayList<>();
         SQLiteDatabase database = this.getWritableDatabase();
